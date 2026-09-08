@@ -24,10 +24,13 @@ The method works by:
 - Clustering the filtered beta into persistent low/medium/high-sensitivity regimes using a Gaussian Hidden Markov Model, and characterizing each regime's return distribution and annualized performance
 
 The data used here are **daily USD and EUR 3-month OIS swap rates and the EUR/USD exchange rate**.
-![Filtered beta colored by HMM regime](image.png)
+
 
 | Metric                 | Low    | Medium | High  |
 |------------------------|--------|--------|-------|
 | Days in regime         | 215    | 734    | 512   |
 | Annualized mean return | -6.05% | -2.07% | 3.14% |
 | Annualized volatility  | 7.89%  | 7.37%  | 7.00% |
+
+![Filtered beta colored by HMM regime](image.png)
+
