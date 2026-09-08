@@ -11,7 +11,7 @@ The method works by:
 - Producing diagnostic plots (coefficient paths, t-statistics, degrees of freedom, and CV objective curves) and a summary table of the largest/most significant coefficients
 
 The data used here are **Goldman Sachs factor portfolios**, applied as the set of candidate anomaly/factor returns fed into the shrinkage estimation. Since these GS portfolios are **updated daily**, the model can be re-estimated on a rolling basis with fresh data, giving it genuine real-world applicability.
-
+![Optimal OOS shrinkage](SCS.png)
 
 ## Kalman Filter Regime-Switching UIP Model
 
