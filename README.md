@@ -32,5 +32,5 @@ The data used here are **daily USD and EUR 3-month OIS swap rates and the EUR/US
 | Annualized mean return | -6.05% | -2.07% | 3.14% |
 | Annualized volatility  | 7.89%  | 7.37%  | 7.00% |
 
-![Filtered beta colored by HMM regime](image.png)
+![Filtered beta colored by HMM regime](Regimes.png)
 
