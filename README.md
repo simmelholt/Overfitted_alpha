@@ -17,13 +17,10 @@ The data used here are **Goldman Sachs factor portfolios**, applied as the set o
 | LONG        | GS US Robotic/Automation   | +0.1366 |
 | LONG        | GSXUDOGE                   | +0.0789 |
 | LONG        | GS Quality Compounders     | +0.0692 |
-| LONG        | GS US Onshore              | +0.0667 |
-| LONG        | GS US Health Care Risk     | +0.0597 |
 | SHORT       | US Earnings Yield Long     | -0.0846 |
-| SHORT       | US Earnings Yield Short    | -0.0789 |
 | SHORT       | GS US Low Mgmt Quality     | -0.0657 |
 | SHORT       | GS Bond Proxies            | -0.0627 |
-| SHORT       | GS US Real Estate          | -0.0529 |
+
 
 ![Optimal OOS shrinkage](SCS.png)
 
