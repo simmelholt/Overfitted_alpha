@@ -65,14 +65,12 @@ course.
    it on zero rates (linear / Hermite / Nelson-Siegel).
 2. Derives the forward par swap rate and annuity factor for a chosen expiry x tenor
    swaption cell (e.g. 1Y1Y, 5Y5Y).
-3. Calibrates SABR to a real Black-vol smile, with `beta` bounded to `[0,1]` to
-   keep the model economically valid.
-4. Extracts the risk-neutral density via Breeden-Litzenberger (dividing by the
+3. Extracts the risk-neutral density via Breeden-Litzenberger (dividing by the
    annuity, since swaptions price under the annuity measure, not the money-market
    measure), from both the raw market smile and the SABR fit.
-5. Validates the analytic density against a Monte Carlo simulation of the SABR
+4. Validates the analytic density against a Monte Carlo simulation of the SABR
    SDEs.
-6. Compares the implied distribution across two dates, separating a shift in the
+5. Compares the implied distribution across two dates, separating a shift in the
    central forward rate from a genuine change in implied uncertainty.
 
    ![SABR risk-neutral density and NS interpolation](SABR.png)
