@@ -48,3 +48,31 @@ The data used here are **daily USD and EUR 3-month OIS swap rates and the EUR/US
 
 ![Filtered beta colored by HMM regime](Regimes.png)
 
+
+# Risk-Neutral Densities from Swaption Smiles
+
+This project extracts the market-implied risk-neutral probability distribution
+of forward swap rates from real Bloomberg swaption data, using the
+Breeden-Litzenberger (1978) result together with the SABR stochastic volatility
+model.
+
+The code builds on functions and material provided in a Fixed Income Derivatives
+course.
+
+## What this does
+
+1. Bootstraps a EUR OIS discount curve from quoted par swap rates and interpolates
+   it on zero rates (linear / Hermite / Nelson-Siegel).
+2. Derives the forward par swap rate and annuity factor for a chosen expiry x tenor
+   swaption cell (e.g. 1Y1Y, 5Y5Y).
+3. Calibrates SABR to a real Black-vol smile, with `beta` bounded to `[0,1]` to
+   keep the model economically valid.
+4. Extracts the risk-neutral density via Breeden-Litzenberger (dividing by the
+   annuity, since swaptions price under the annuity measure, not the money-market
+   measure), from both the raw market smile and the SABR fit.
+5. Validates the analytic density against a Monte Carlo simulation of the SABR
+   SDEs.
+6. Compares the implied distribution across two dates, separating a shift in the
+   central forward rate from a genuine change in implied uncertainty.
+
+   ![SABR risk-neutral density and NS interpolation](SABR.png)
