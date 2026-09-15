@@ -1,6 +1,6 @@
 [README.md](https://github.com/user-attachments/files/31417438/README.md)
 
-This repository contains a collection of notebooks I have developed to showcase a range of models. The notebooks are inspired by methodologies and ideas drawn from academic literature and other sources. Using sample data, each notebook demonstrates how a model can be implemented and applied in practice.
+*This repository contains a collection of notebooks I have developed to showcase a range of models. The notebooks draw upon methodologies and ideas from academic literature and other sources. Using sample data, each notebook demonstrates how a model can be implemented and applied in practice.*
 
 ## Shrinking the Cross-Section (SCS) Factor Model
 
