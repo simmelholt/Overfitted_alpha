@@ -1,4 +1,7 @@
 [README.md](https://github.com/user-attachments/files/31417438/README.md)
+
+This repository contains a collection of notebooks I have developed to showcase a range of models. The notebooks are inspired by methodologies and ideas drawn from academic literature and other sources. Using sample data, each notebook demonstrates how a model can be implemented and applied in practice.
+
 ## Shrinking the Cross-Section (SCS) Factor Model
 
 The SCS notebook implements the L2-shrinkage (ridge-type) estimator from **Kozak, Nagel, and Santosh (2019), "Shrinking the Cross-Section"**, which estimates a stochastic discount factor (SDF) as a regularized combination of a large set of candidate return factors rather than relying on a small hand-picked set.
