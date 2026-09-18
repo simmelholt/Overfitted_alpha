@@ -59,7 +59,7 @@ model.
 The code builds on functions and material provided in a Fixed Income Derivatives
 course.
 
-## What this does
+## 
 
 - Bootstraps a EUR OIS discount curve from quoted par swap rates and interpolates it on zero rates using Nelson-Siegel.
 
