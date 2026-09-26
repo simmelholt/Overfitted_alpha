@@ -61,6 +61,10 @@ The method works by:
 
 The data used here are **Goldman Sachs factor portfolios**, applied as the set of candidate anomaly/factor returns fed into the shrinkage estimation. Since these GS portfolios are **updated daily**, the model can be re-estimated on a rolling basis with fresh data, giving it genuine real-world applicability.
 
+
+
+![Optimal OOS shrinkage](SCS.png)
+
 | Signal Type | Factor                     | Beta    |
 |-------------|----------------------------|---------|
 | LONG        | GS US Robotic/Automation   | +0.1366 |
@@ -69,8 +73,4 @@ The data used here are **Goldman Sachs factor portfolios**, applied as the set o
 | SHORT       | US Earnings Yield Long     | -0.0846 |
 | SHORT       | GS US Low Mgmt Quality     | -0.0657 |
 | SHORT       | GS Bond Proxies            | -0.0627 |
-
-
-![Optimal OOS shrinkage](SCS.png)
-
   
