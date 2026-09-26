@@ -4,10 +4,10 @@
 
 ## Kalman Filter Regime-Switching UIP Model
 
-The Kalman notebook implements a **time-varying linear regression via a Kalman filter** to estimate the relationship between EUR/USD returns and the EUR–USD interest rate differential, testing the classical **Uncovered Interest Rate Parity (UIP)** hypothesis in a setting where the sensitivity between the two is allowed to drift over time rather than being estimated once, in-sample, and held fixed.
+The Kalman notebook implements a **time-varying linear regression via a Kalman filter** to estimate the relationship between EUR/USD returns and the EUR–USD interest rate differential, testing the **Uncovered Interest Rate Parity** hypothesis in a setting where the sensitivity between the two is allowed to drift over time rather than being estimated once and held fixed.
 
 The method works by:
-- Framing the regression as a linear-Gaussian state-space model, with the regression coefficients (alpha, beta) as a hidden state that follows a random walk
+- Framing the regression as a linear-Gaussian state-space model, with the alpha and beta coefficients as a hidden state that follows a random walk
 - Estimating the initial state via OLS, then calibrating the process and measurement noise via MLE 
 - Running the Kalman filter on a held-out test window to produce a day-by-day filtered beta, compared against a naive rolling-OLS beta
 - Clustering the filtered beta into persistent low/medium/high-sensitivity regimes using a Gaussian Hidden Markov Model, and characterizing each regime's return distribution and annualized performance
@@ -26,7 +26,7 @@ The data used here are **daily USD and EUR 3-month OIS swap rates and the EUR/US
 
 # Risk-Neutral Densities from Swaption Smiles
 
-In the Risk_neutral_probabilities notebook the market-implied risk-neutral probability distribution
+In the Risk neutral probabilities notebook the market-implied risk-neutral probability distribution
 of forward swap rates is extracted from swaption data and the EUR OIS curve, using the
 Breeden-Litzenberger (1978) result together with the SABR stochastic volatility
 model.
@@ -48,7 +48,7 @@ course.
 
    ![SABR risk-neutral density and NS interpolation](SABR.png)
 
-## Shrinking the Cross-Section (SCS) Factor Model
+## Shrinking the Cross-Section Factor Model
 
 The SCS notebook implements the L2-shrinkage (ridge-type) estimator from **Kozak, Nagel, and Santosh (2019), "Shrinking the Cross-Section"**, which estimates a stochastic discount factor (SDF) as a regularized combination of a large set of candidate return factors rather than relying on a small hand-picked set.
 
